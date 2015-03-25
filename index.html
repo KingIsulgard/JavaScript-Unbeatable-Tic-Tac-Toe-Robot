@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Tic Tac Toe</title>
+		<meta name="author" content="Gilles Lesire" />
+		<meta name="description" content="A JavaScript Tic Tac Toe bot" />
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		
+		<script type="text/javascript" src="./lines.js"></script>
+		<script type="text/javascript" src="./startgame.js"></script>
+		<script type="text/javascript" src="./endgame.js"></script>
+		<script type="text/javascript" src="./movements.js"></script>
+		<script type="text/javascript" src="./computer.js"></script>
+		<script type="text/javascript" src="./checkgame.js"></script>
+		<script type="text/javascript" src="./tictactoe.js"></script>
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+	</head>
+	
+	<body onLoad="setField();" style="text-align: center;">
+		<div class="wrapper">
+			<br>This is an unbeatable Tic Tac Toe bot. Don't believe me? Try it!
+			<br><br><br>
+		</div>
+		<div class="wrapper">
+			<table align="center" style="width: 470px; border: 0; border-collapse: collapse;">
+				<tr>
+					<td>
+						<div class="overview">
+							<div class="title">
+								Tic Tac Toe
+							</div>
+							<div class="game">
+								<div class="wrapper">
+									<div class="field" id="11"></div>
+									<div class="field" id="12"></div>
+									<div class="field" id="13"></div>
+								</div>
+								<div class="wrapper">
+									<div class="field" id="21"></div>
+									<div class="field" id="22"></div>
+									<div class="field" id="23"></div>
+								</div>
+								<div class="wrapper">
+									<div class="field" id="31"></div>
+									<div class="field" id="32"></div>
+									<div class="field" id="33"></div>
+								</div>
+							</div>
+						</div>
+						<div class="scoreboard">
+							<div class="leader">
+								Scores
+							</div>
+							<div class="score">
+								<div class="wrapper">
+									<div class="points">
+										You
+									</div>
+									<div class="points" id="yourscore"></div>
+								</div>
+								<div class="wrapper">
+									<div class="points">
+										Computer
+									</div>
+									<div class="points" id="botscore"></div>
+								</div>
+								<div class="wrapper">
+									<div class="points">
+										Ties
+									</div>
+									<div class="points" id="tiescore"></div>
+								</div>
+							</div>
+							<div style="height: 20px; clear: both;">&nbsp;</div>
+							<div class="leader">
+								The Battle
+							</div>
+							<div id="log"></div>
+							<div style="height: 20px; clear: both;">&nbsp;</div>
+							<div id="startbutton">
+								<input type="button" name="Run" value="New Game" onClick="setField();" />
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p>
+			This extremely smart computer player has been created by Gilles Lesire<br>
+			Check my other games: 
+			<ul>
+				<li>
+					<a href="http://businessgame.be" title="Businessgame.be" target="_blank">Businessgame.be</a>
+				</li>
+				<li>
+					<a href="https://github.com/KingIsulgard" title="SudoTrix" target="_blank">SudoTrix</a>
+				</li>
+				<li>
+					<a href="https://github.com/KingIsulgard" title="GitHub" target="_blank">GitHub</a>
+				</li>
+			</ul>
+		</p>
+	</body>
+</html>
